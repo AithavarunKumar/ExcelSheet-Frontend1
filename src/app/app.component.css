@@ -1,0 +1,38 @@
+/* Style for the loading spinner */
+.loading-spinner {
+  font-size: 20px;
+  color: #007bff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Style for the file upload and email input */
+.container {
+  margin: 20px;
+}
+
+.file-upload,
+.email-input {
+  margin-bottom: 20px;
+}
+
+.send-button button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.send-button button:disabled {
+  background-color: #dcdcdc;
+  cursor: not-allowed;
+}
+
+.uploaded-data,
+.fetched-data {
+  margin-top: 30px;
+  font-family: monospace;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+  white-space: pre-wrap;
+}

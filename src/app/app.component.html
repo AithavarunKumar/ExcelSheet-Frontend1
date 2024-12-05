@@ -1,0 +1,16 @@
+<div class="container">
+  <h2>Upload Excel File and Send Email</h2>
+  <div class="file-upload">
+    <input type="file" (change)="onFileChange($event)" />
+  </div>
+  <div class="email-input">
+    <input type="email" [(ngModel)]="email" placeholder="Recipient Email" />
+  </div>
+  <div class="send-button">
+    <button (click)="sendDataToBackend()" [disabled]="!email || !data.length">Send Email</button>
+  </div>
+  <div class="uploaded-data">
+    <h3>Uploaded Data:</h3>
+    <pre>{{ data | json }}</pre>
+  </div>
+</div>
